@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>City of Calgary Building Permits Map</title>
+    
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+    <!-- Include flatpickr for selecting date range CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+    <!-- Include Leaflet.markercluster CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+
+    <!-- Include Mapbox CSS (if needed) -->
+    <link href="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css" rel="stylesheet" />
+
+    <!-- Style map-->
+    <style>
+        #map {
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header-->
+    <div id="header"><h1>City of Calgary Building Permits Map</h1></div>
+
+    <!-- Date picker for permits input -->
+    <label for="datePicker">Select Date Range:</label>
+    <input type="text" id="datePicker" placeholder="Select date range">
+    <button id="filterButton">Filter</button><br><br>
+
+    <!-- Map -->
+    <div id="map"></div>
+
+    <!-- Include Leaflet JS, Leaflet.markercluster JS, flatpickr JS, and Mapbox JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js"></script>
+
+    <!-- Include javascript file-->
+    <script src="app.js"></script>
+</body>
+</html>
+
